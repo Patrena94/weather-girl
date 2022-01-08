@@ -83,7 +83,7 @@ cursor:progress;
 }
 h1 .temp {
     margin: 0;
-    margin-bottom: 0.4rem;
+    /* margin-bottom: 0.4rem; */
   }
 .description{
     text-transform: uppercase;

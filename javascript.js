@@ -20,8 +20,8 @@ document.querySelector(".city").innerText = "Weather in " + name;
 document.querySelector(".icon").src ="https://openweathermap.org/img/wn/" + icon + ".png"; 
 document.querySelector(".description").innerText = description;
 document.querySelector(".temp").innerText = temp +"°F";
-document.querySelector(".humidity").innerText ="Humidity:" + humidity +"%";
-document.querySelector(".wind").innerText= "Wind Speed:" + speed +"km/h";
+document.querySelector(".humidity").innerText ="Humidity:  " + humidity +"%";
+document.querySelector(".wind").innerText= "Wind Speed: " + speed +"km/h";
 document.querySelector(".weather").classList.remove("loading");
 // background picture that represents the city
 document.body.style.backgroundImage =
