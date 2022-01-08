@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <Link rel="stylesheet" href="./style.css">
     <title>Weather Girl</title>
-    <script src="./javascript.js"></script>
+    <script src="./javascript.js" defer></script>
 </head>
 <body>
     <div class="card-container">
@@ -21,10 +21,13 @@
               </svg>
             </button>
         </div>
-        <div class="weather">
-            <h2 class="city">Weather in connecticut</h2>
+        <div class="weather loading" >
+            <h2 class="city">Hope</h2>
             <h1 class="temp">85&deg;F</h1>
-            <img class="description">Sunny</div>
+            <div class="flex">
+                <img src="" alt="" class="icon" />
+            <div class="description">Sunny</div>
+        </div>
             <div class="humidity">Humidity: 70%</div>
             <div class="wind">Wind Speed: 6.2km</div>
     </div>

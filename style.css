@@ -11,13 +11,19 @@ body {
 }
 .card {
   color: indigo;
-  border: 2px solid teal;
+  border: 3px solid teal;
   padding: 2rem;
   border-radius: 30px;
   width: 100%;
   max-width: 420px;
   margin: 1rem;
-  box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+  background-color: rgba(238, 50, 153, 0.918);
+  opacity:3;
+  box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.50);
+}
+
+ h2 .city{
+  word-spacing: 2px;
 }
 
 /* .card .input{
@@ -39,7 +45,7 @@ button {
   /* padding: 3px; */
   outline: none;
   background-color: teal;
-  color:indigo indigo;
+  color: indigo;
   cursor: grabbing;
   transition: 0.2s ease-in-out;
 }
@@ -57,13 +63,15 @@ cursor:progress;
   padding: 0.5rem 1rem;
   background-color: transparent;
   color: indigo;
-  font-size: 100%;
+  font-size: 120%;
+  font-weight: 600;
+  text-transform: uppercase;
   width: calc(100%-100px);
 }
 .humidity {
   font-weight: 600;
   font-style: italic;
-  transform: uppercase;
+  text-transform: uppercase;
 }
 .wind {
   font-weight: 600;
@@ -72,4 +80,34 @@ cursor:progress;
 .temp {
   font-weight: 600;
   font-style: italic;
+}
+h1 .temp {
+    margin: 0;
+    margin-bottom: 0.4rem;
+  }
+.description{
+    text-transform: uppercase;
+    margin-left: 8px;
+    font-weight: 600;
+    font-style: italic;
+}
+.icon{
+    display: flex;
+}
+.flex{
+ display: flex;
+ align-items: center;   
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
